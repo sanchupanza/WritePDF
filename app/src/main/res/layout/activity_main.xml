@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Personal Information"/>
+
+    <EditText
+        android:id="@+id/EtName"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Enter your Full Name here..."
+
+        />
+    <EditText
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:id="@+id/phno"
+        android:inputType="phone"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Phone Number"
+        />
+
+
+
+    <EditText
+        android:id="@+id/Et_Place"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Date of Birth"
+        />
+
+    <EditText
+        android:id="@+id/Et_Place2"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Languages known"
+        />
+    <EditText
+        android:id="@+id/address"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Enter your Address"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Abstract details about you"/>
+    <EditText
+        android:id="@+id/abstract_details"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Details about you, skills, College Name, etc.. "
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Academic Qualification"/>
+    <EditText
+        android:id="@+id/degree_name"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Degree Name"
+        />
+    <EditText
+        android:id="@+id/stream_name"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Stream / Branch Name"
+        />
+    <EditText
+        android:id="@+id/clg_name"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="College Name"
+        />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="2">
+           <EditText
+               android:id="@+id/fy_year"
+               android:inputType="number"
+               android:gravity="start"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="5dp"
+               android:padding="20dp"
+               android:hint="First year of passing"
+               android:layout_weight="1"
+               />
+           <EditText
+               android:id="@+id/fy_perct"
+               android:inputType="number"
+               android:gravity="start"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="5dp"
+               android:padding="20dp"
+               android:hint="First year %/CGPA"
+               android:layout_weight="1"
+               />
+
+       </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <EditText
+            android:id="@+id/sy_year"
+            android:inputType="number"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="Second year of passing"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/sy_perct"
+            android:inputType="number"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="Second year %/CGPA"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <EditText
+            android:id="@+id/ty_year"
+            android:inputType="number"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="Final year of passing"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/ty_perct"
+            android:inputType="number"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="Final year %/CGPA"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Diploma / 12th details"/>
+
+
+
+    <EditText
+        android:id="@+id/d_branch"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Diploma /12 branch"
+        />
+    <EditText
+        android:id="@+id/d_year"
+        android:inputType="number"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Diplom/12th year of Passing"
+        />
+    <EditText
+        android:id="@+id/d_clgName"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Diplom/12th college name"
+        />
+    <EditText
+        android:id="@+id/d_perct"
+        android:inputType="number"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Diploma/12th percentage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="10th details"/>
+
+
+
+    <EditText
+        android:id="@+id/s_year"
+        android:inputType="number"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="10th year of Passing"
+        />
+    <EditText
+        android:id="@+id/s_clgName"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="10th School name"
+        />
+    <EditText
+        android:id="@+id/s_perct"
+        android:inputType="number"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="10th percentage"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Technical Skills"/>
+
+
+
+    <EditText
+        android:id="@+id/ts1"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="1.Skill "
+        />
+    <EditText
+        android:id="@+id/ts2"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="2.Skill"
+        />
+    <EditText
+        android:id="@+id/ts3"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="3.Skill"
+        />
+    <EditText
+        android:id="@+id/ts4"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="4.Skill"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Certifications"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <EditText
+        android:id="@+id/c1_name"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="1.Certificate Name "
+        android:layout_weight="1"
+        />
+    <EditText
+        android:id="@+id/c1_instName"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="1.Certificate Institute name"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <EditText
+        android:id="@+id/c1_startDate"
+        android:inputType="number"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="1.Certificate Start Date"
+        android:layout_weight="1"
+        />
+        <EditText
+            android:id="@+id/c1_endDate"
+            android:inputType="number"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="1.Certificate End Date"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/c2_name"
+            android:inputType="textMultiLine"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="2.Certificate Name "
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/c2_instName"
+            android:inputType="textMultiLine"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="2.Certificate Institute name"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <EditText
+            android:id="@+id/c2_startDate"
+            android:inputType="number"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="2.Certificate Start Date"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:id="@+id/c2_endDate"
+            android:inputType="number"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="20dp"
+            android:hint="2.Certificate End Date"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Projects-"/>
+    <EditText
+        android:id="@+id/p1"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="1.Project"
+        />
+    <EditText
+        android:id="@+id/p2"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="2.Project"
+        />
+    <EditText
+        android:id="@+id/p3"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="3.Project"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Professional Experience"/>
+    <EditText
+        android:id="@+id/pro_exp"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Experience Details"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="Interests"/>
+    <EditText
+        android:id="@+id/I1"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="1.Interest"
+        />
+    <EditText
+        android:id="@+id/I2"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="2.Interest"
+        />
+    <EditText
+        android:id="@+id/I3"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="3.interest"
+        />
+    <EditText
+        android:id="@+id/place"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Place"
+        />
+    <EditText
+        android:id="@+id/last_update"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Last Update"
+        />
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Save pdf"
+        />
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
